@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VICEFRAME — GTA-style cover studio</title>
+    <meta
+      name="description"
+      content="VICEFRAME turns your photos into multi-panel, GTA-style game covers: pick a layout, grade and frame, cast your crew, and export a poster. Everything runs locally in your browser."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <div class="brand">
+        <span class="brand-name">VICEFRAME</span>
+        <span class="brand-sub">cover studio</span>
+      </div>
+      <div class="history">
+        <button id="undoBtn" type="button">↩ Undo</button>
+        <button id="redoBtn" type="button">↪ Redo</button>
+      </div>
+    </header>
+    <main>
+      <aside id="controls" aria-label="Poster controls"></aside>
+      <section id="stage">
+        <canvas id="poster" width="1080" height="1080"></canvas>
+        <p class="stage-hint">Drag a panel to reframe it · scroll over a panel to zoom · pick a photo, then click a panel to cast it</p>
+      </section>
+    </main>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
